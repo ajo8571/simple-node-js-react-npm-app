@@ -6,8 +6,6 @@ pipeline {
             steps {
                 echo 'npm install...'
                 powershell(script: 'npm install')
-            }
-            steps {
                 echo 'yarn build...'
                 powershell(script: 'yarn build')
             }
