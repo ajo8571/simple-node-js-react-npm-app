@@ -4,10 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                pwsh{
-                    script 'npm install'
-                    returnStdout true
-                }
+                pwsh(script: 'npm install' returnStdout: true)
             }
         }
 
