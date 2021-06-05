@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'hello world'
+                pwsh{
+                    script 'npm install'
+                    returnStdout true
+                }
             }
         }
 
