@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                pwsh(script: 'echo npm install', returnStdout: true)
+                powershell(script: 'echo npm install', returnStdout: true)
             }
         }
 
